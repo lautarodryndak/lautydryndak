@@ -1,0 +1,14 @@
+// Section texto de la pagina principal 
+
+
+.section1{ 
+    border: solid 4px $bg-color-general;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 40px;
+     
+    grid-area: section;
+}

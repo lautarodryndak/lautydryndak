@@ -1,0 +1,25 @@
+*{
+    margin: 0; 
+    padding: 0;
+}  
+
+// Body 
+
+.grid-conteiner{ 
+    width: 100%; 
+    margin: 0 auto;
+     display: grid; 
+     grid-template-rows: 180px 600px 150px 300px 200px;
+     grid-template-columns: 1fr;  
+     grid-template-areas:  
+     "navbar" 
+     "imagen" 
+     "div"
+     " section" 
+     "footer"
+     ;
+} 
+
+a{ 
+    text-decoration: none;
+}

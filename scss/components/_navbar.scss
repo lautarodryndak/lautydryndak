@@ -1,0 +1,39 @@
+// Navbar general
+
+.header1{ 
+    background-color: $bg-color-general ; 
+    align-items: center; 
+    padding-left: 40px;
+    display: flex; 
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    grid-area: navbar; 
+    .nav1{ 
+        color: $color-secundario-letras;
+        display:flex;
+        padding:5px;
+        .titulo1{ 
+            color: $color-secundario-letras;
+            font-size: 40px;
+
+        } 
+        .lista1{ 
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center; 
+            
+            .lista1-li{ 
+                display: flex; 
+                margin: 10px;
+                list-style: none;
+                font-size: 23px;
+                padding-left: 70px; 
+                
+
+            }
+
+        }
+    } 
+    
+}
+

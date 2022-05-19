@@ -1,0 +1,14 @@
+// Div titulo debajo de la imagen principal
+
+.div2{ 
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, rgba(183,202,219,1) 97%);
+    color: $color-secundario-letras;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    font-size: 23px;
+    grid-area: div; 
+    
+}
