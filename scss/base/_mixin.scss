@@ -1,0 +1,7 @@
+//mixin listas 
+
+@mixin lista ($flex, $aling, $justify) {
+    display: $flex;
+    justify-content: $aling;  
+    align-items: $justify; 
+} 

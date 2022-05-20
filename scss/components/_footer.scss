@@ -4,9 +4,7 @@
     background-color: $bg-color-general ; 
     color: $color-secundario-letras;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+    @extend %flex;
     padding: 0 20px; 
     font-size: 20px;
     grid-area: footer; 

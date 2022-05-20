@@ -1,33 +1,31 @@
+@import '../base/mapas'; 
+@import '../base/extends';
+@import '../base/mixin';
 // Navbar general
 
 .header1{ 
-    background-color: $bg-color-general ; 
-    align-items: center; 
-    padding-left: 40px;
-    display: flex; 
-    justify-content: space-between;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: map-get($navbar, bg-navbar);
+    padding-left: map-get($navbar, padding-left ) ;
+    @extend %flex;
     grid-area: navbar; 
     .nav1{ 
-        color: $color-secundario-letras;
+        color: map-get($navbar, color-letras );
         display:flex;
         padding:5px;
         .titulo1{ 
             color: $color-secundario-letras;
-            font-size: 40px;
+            font-size: map-get($navbar, tamaño-titulo );
 
         } 
         .lista1{ 
-            display: flex;
-            justify-content: flex-end; 
-            align-items: center; 
+            @include lista(flex, flex-end, center); 
             
             .lista1-li{ 
                 display: flex; 
-                margin: 10px;
-                list-style: none;
-                font-size: 23px;
-                padding-left: 70px; 
+                margin: map-get($navbar, margin-lista );
+                list-style: map-get($navbar, list-style-lista  );
+                font-size: map-get($navbar, tamaño-lista );
+                padding-left: map-get($navbar, padding-left-lista ); 
                 
 
             }

@@ -10,4 +10,20 @@
 
     }
 
+} 
+
+// Imagen seccion Nosotros 
+
+.div3{ 
+    border: solid 4px #B7CADB;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-right: 80px; 
+    margin-left: 80px; 
+    grid-area: imagen;
+    .img2{ 
+        width: 100%;
+        height: 100%;
+      
+    }
 }

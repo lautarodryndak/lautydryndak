@@ -3,7 +3,13 @@
     padding: 0;
 }  
 
-// Body 
+a{ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-decoration: none;
+} 
+
+
+// Body Inicio 
 
 .grid-conteiner{ 
     width: 100%; 
@@ -20,6 +26,20 @@
      ;
 } 
 
-a{ 
-    text-decoration: none;
+
+
+// Body Seccion Nosotros 
+
+.grid-conteiner-1{  
+    width: 100%; 
+    margin: 0 auto;
+    display: grid; 
+    grid-template-rows: 180px 600px 550px 200px;
+    grid-template-columns: 1fr;  
+    grid-template-areas:  
+    "navbar" 
+    "imagen" 
+    " section" 
+    "footer"
+    ;
 }

@@ -5,10 +5,22 @@
     border: solid 4px $bg-color-general;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     height: 100%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    @extend %flex2; 
     padding: 0 40px;
      
+    grid-area: section;
+} 
+
+// Seccion texto de Nosotros 
+
+.sections2{ 
+    border: solid 4px #B7CADB ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-right: 80px; 
+    margin-left: 80px; 
+    @extend %flex2; 
+    padding: 0 40px;
     grid-area: section;
 }
