@@ -1,33 +1,44 @@
 @import '../base/mapas'; 
 @import '../base/extends';
-@import '../base/mixin';
+@import '../base/mixin'; 
+@import '../base/variables';
+
 // Navbar general
 
 .header1{ 
     background-color: map-get($navbar, bg-navbar);
-    padding-left: map-get($navbar, padding-left ) ;
-    @extend %flex;
+    display: flex; 
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    z-index: 1020;
     grid-area: navbar; 
     .nav1{ 
         color: map-get($navbar, color-letras );
         display:flex;
-        padding:5px;
+        align-items: center;
         .titulo1{ 
-            color: $color-secundario-letras;
-            font-size: map-get($navbar, tamaño-titulo );
+            color: $bg-color-general;
+            font-size: map-get($navbar, tamaño-titulo ); 
+            padding-left: map-get($navbar, padding-left );
 
-        } 
+        }  
+        .color-boton{ 
+            color: map-get($navbar, color-letras )
+
+        }
         .lista1{ 
-            @include lista(flex, flex-end, center); 
+            justify-content: flex-end; 
+            font-size: 23px; 
+            padding-left: 190px;   
             
             .lista1-li{ 
-                display: flex; 
-                margin: map-get($navbar, margin-lista );
-                list-style: map-get($navbar, list-style-lista  );
-                font-size: map-get($navbar, tamaño-lista );
-                padding-left: map-get($navbar, padding-left-lista ); 
+                padding-left: 70px; 
                 
-
+                .lista1-li-a{ 
+                    color: #E8F9FD;
+                }
+                
             }
 
         }
@@ -35,3 +46,16 @@
     
 }
 
+
+@media (max-width: 576px){ 
+    .header1{ 
+        position: initial;
+        
+    }
+} 
+@media (min-width: 576px) and (max-width: 992px) { 
+    .header1{ 
+        position: initial;
+        
+    }
+}

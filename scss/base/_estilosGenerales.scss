@@ -1,3 +1,4 @@
+@import '../base/variables';
 *{
     margin: 0; 
     padding: 0;
@@ -15,7 +16,8 @@ a{
     width: 100%; 
     margin: 0 auto;
      display: grid; 
-     grid-template-rows: 180px 600px 150px 300px 200px;
+     background-color: $bg-color-general;
+     grid-template-rows: 180px 600px 150px 300px 300px;
      grid-template-columns: 1fr;  
      grid-template-areas:  
      "navbar" 
@@ -33,8 +35,9 @@ a{
 .grid-conteiner-1{  
     width: 100%; 
     margin: 0 auto;
-    display: grid; 
-    grid-template-rows: 180px 600px 550px 200px;
+    display: grid;  
+    background-color: $bg-color-general;
+    grid-template-rows: 180px 600px 600px 300px;
     grid-template-columns: 1fr;  
     grid-template-areas:  
     "navbar" 
@@ -42,4 +45,46 @@ a{
     " section" 
     "footer"
     ;
-}
+} 
+
+// media queri 
+@media (max-width: 576px) {
+    
+    .header1{ 
+        position: none;
+    }
+    .grid-conteiner{ 
+       
+       grid-template-rows: 300px 300px 150px 650px 300px;
+    }
+    .grid-conteiner-1{ 
+       grid-template-rows: 300px 500px 1350px 300px;
+
+    }  
+    
+   }
+
+   
+   
+  
+   
+
+  @media (min-width: 576px) and (max-width: 992px) {
+      
+       .footer1{
+       flex-direction:column;
+       align-items:center; }
+        .grid-conteiner{ 
+       
+           grid-template-rows: 300px 500px 150px 400px 300px;
+           
+         }
+        .grid-conteiner-1{  
+           
+           grid-template-rows: 300px 500px 850px 300px;
+
+        
+           }  
+          
+            
+       }  

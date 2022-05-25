@@ -7,7 +7,8 @@
    width: 100%; 
    margin: 0 auto;
     display: grid; 
-    grid-template-rows: 180px 600px 150px 300px 200px;
+    background-color: #E8F9FD; 
+    grid-template-rows: 180px 600px 150px 300px 300px;
     grid-template-columns: 1fr;  
     grid-template-areas:  
     "navbar" 
@@ -21,50 +22,60 @@
 }
 
 .header1{ 
-    background-color: #B7CADB ; 
-    align-items: center; 
-    padding-left: 40px;
-    display: flex; 
-    justify-content: space-between;
+    background-color: #B1D0E0; 
+    align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    display: flex;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1020; 
     grid-area: navbar; 
     
-} 
-
-    
-
+}  
 
 
 .titulo1{ 
-    color: #035397;
-    font-size: 40px; 
+    color: #E8F9FD;
+    font-size: 40px;  
+    padding-left: 40px; 
     
     
     
+} 
+.color-boton{ 
+    background-color: #E8F9FD ; 
+    display: flex; 
+    
+
 }
 .nav1{ 
-    color: #035397;
-    display:flex;
-    padding:5px;
+    
+    display: flex;
+   align-items: center;
     
 }
 
 .lista1{ 
-    display: flex;
+    
     justify-content: flex-end; 
-    align-items: center;
-   
+    font-size: 23px; 
+    padding-left: 190px; 
     
 }  
+
 .lista1 li{ 
-    display: flex; 
-    margin: 10px;
-    list-style: none;
-    font-size: 23px;
-    padding-left: 70px;  
+   
+    padding-left: 70px;
     
 } 
-a{
+
+.lista1 li a{ 
+    color: #E8F9FD;
+} 
+
+a{ 
+    
     text-decoration:none;
   }  
 
@@ -83,8 +94,7 @@ a{
 } 
 
 .div2{ 
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, rgba(183,202,219,1) 97%);
+    background-color: #B1D0E0;
     color: #035397;
     display: flex; 
     justify-content: center; 
@@ -95,7 +105,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, r
     
 }
 .section1{ 
-    border: solid 4px #B7CADB ;
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     height: 100%; 
     display: flex; 
@@ -108,20 +118,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, r
 
 }  
 
-.footer1{ 
-    background-color: #B7CADB ; 
-    color: #035397;
+/* .footer1{ 
+    background-color: #6998AB ; 
+    color: #E8F9FD;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
     padding: 0 20px; 
     font-size: 20px;
     grid-area: footer;
 }  
 
 .footer-nav{ 
-    width: 30%;
+    width: 30%; 
+    margin-right: auto;
+    margin-left: auto;
 } 
 
 .footer-lista{ 
@@ -132,7 +141,38 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, r
 
 .footer-div{ 
     font-size: 30px;
-    padding-left: 20px;
+    padding-left: 20px; 
+    margin-right: auto;
+    margin-left: auto;
+} */ 
+
+footer{ 
+    background-color: #6998AB; 
+    grid-area: footer;
+}
+footer .titulo-footer { 
+    color: #E8F9FD; 
+    display: flex; 
+    justify-content: center; 
+    font-size: 60px; 
+    padding: 15px;
+} 
+
+footer .copy { 
+    color: #E8F9FD; 
+    display: flex; 
+    justify-content: center; 
+    padding: 15px;
+    
+} 
+.redes-sociales{ 
+    display: flex; 
+    justify-content: center;
+} 
+.redes-sociales i{ 
+    font-size: 40px; 
+    padding: 40px 20px; 
+    color: #E8F9FD;
 }
 
 .grid-conteiner-1{  
@@ -236,13 +276,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, r
 
 @media (max-width: 576px) {
     
-    .header1, .nav1, .lista1, .footer1{
+     .footer1{
         flex-direction:column;
-        align-items:center; }
+        align-items:center; } 
+        
      
      .grid-conteiner{ 
         
-        grid-template-rows: 420px 500px 150px 600px 200px;
+        grid-template-rows: 180px 300px 150px 400px 200px;
      }
      .grid-conteiner-1{ 
         grid-template-rows: 420px 500px 1150px 200px;
@@ -267,7 +308,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,202,219,1) 42%, r
 
    @media (min-width: 576px) and (max-width: 992px) {
        
-       .header1, .nav1, .lista1, .footer1{
+        .footer1{
         flex-direction:column;
         align-items:center; }
          .grid-conteiner{ 

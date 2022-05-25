@@ -2,25 +2,44 @@
 
 
 .section1{ 
-    border: solid 4px $bg-color-general;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     height: 100%; 
     @extend %flex2; 
     padding: 0 40px;
      
-    grid-area: section;
+    grid-area: section; 
+    .texto-secundario{
+        font-size: 20px;
+
+    }
 } 
 
 // Seccion texto de Nosotros 
 
-.sections2{ 
-    border: solid 4px #B7CADB ;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+.sections2{  
+   
     margin-top: 20px; 
     margin-bottom: 20px;
     margin-right: 80px; 
     margin-left: 80px; 
     @extend %flex2; 
     padding: 0 40px;
-    grid-area: section;
+    grid-area: section; 
+    .texto-secundario{
+        font-size: 20px;
+
+    }
+} 
+ 
+@media (max-width: 576px){ 
+    .sections2{ 
+        margin-right: 0px; 
+        margin-left: 0px;
+     }
+}
+
+@media (min-width: 576px) and (max-width: 992px){ 
+    .sections2{ 
+        margin-right: 20px; 
+        margin-left: 20px;
+     }
 }
