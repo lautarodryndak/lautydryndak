@@ -1,6 +1,7 @@
 *{
     margin: 0; 
-    padding: 0;
+    padding: 0; 
+ ;
 } 
 
 .grid-conteiner{  
@@ -60,7 +61,7 @@
     
     justify-content: flex-end; 
     font-size: 23px; 
-    padding-left: 190px; 
+    padding-left: 140px; 
     
 }  
 
@@ -274,63 +275,285 @@ footer .copy {
     padding: 40px 100px 40px 100px;
 } 
 
-@media (max-width: 576px) {
-    
-     .footer1{
-        flex-direction:column;
-        align-items:center; } 
+ 
         
-     
-     .grid-conteiner{ 
-        
-        grid-template-rows: 180px 300px 150px 400px 200px;
-     }
-     .grid-conteiner-1{ 
-        grid-template-rows: 420px 500px 1150px 200px;
-
-     }  
-     .div3{ 
-        margin-right: 0px; 
-        margin-left: 0px;
-     } 
-     .sections2{ 
-        margin-right: 0px; 
-        margin-left: 0px;
-     }
-    
-
-    }
-
-    
-    
-   
-    
-
-   @media (min-width: 576px) and (max-width: 992px) {
-       
-        .footer1{
-        flex-direction:column;
-        align-items:center; }
-         .grid-conteiner{ 
-        
-            grid-template-rows: 420px 500px 150px 400px 200px;
-            
-          }
-         .grid-conteiner-1{  
-            
-            grid-template-rows: 420px 500px 750px 200px;
-
-         
+        /* FORMULARIO */  
+        .grid-conteiner5{  
+            width: 100%; 
+            margin: 0 auto;
+             display: grid; 
+             background-color: #E8F9FD; 
+             grid-template-rows: 180px 1360px 315px;
+             grid-template-columns: 1fr;  
+             grid-template-areas:  
+             "navbar" 
+             "principal" 
+              "footer"
+             ;
             }  
-            .div3{ 
-                margin-right: 20px; 
-                margin-left: 20px;
-             } 
-             .sections2{ 
-                margin-right: 20px; 
-                margin-left: 20px;
-             }
+    
+        .formContainer {
+            background-color: #6998AB;
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px 20px;
+            border-radius: 30px;
+            box-shadow: 12px 12px 43px #E8F9FD; 
+            
+           
+            
+        } 
+        .formContainer__title {
+            font-size: 1.8rem;
+            font-weight: 600; 
+            color: #E8F9FD;
+            margin: 0.5rem;
+            margin-bottom: 1rem;
+            width: auto; 
+            
+        } 
+        .formContainer__p {
+            text-align: center; 
+            color: #E8F9FD;
+            margin: 0.5rem;
+            margin-bottom: 1rem;
+            width: auto; 
+            font-size: 1.2rem; 
+            text-align: center;
+            
+
         }  
+        .formContainer .form {
+            text-align: center;
+        } 
+        .formContainer .form .form__label {
+            color: #E8F9FD;
+            font-weight: 600;
+            font-size: 1.2rem;
+            text-align: left;
+            display: inline-block;
+            width: 60%;
+        }
+       
+        .formContainer .form .form__input {
+            width: 60%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: 2px solid #E8F9FD;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            font-size: 16px;
+            background-color: #E8F9FD; 
+
+        } 
+        .formContainer .form .form__textarea {
+            width: 60%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: 2px solid #E8F9FD;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            background-color: #E8F9FD;
+        } 
+        .formContainer .map {
+            margin-top: 2rem;
+            width: 100%;
+            height: 20rem;
+            border-radius: 5px;
+        } 
+
+
+        /* TORNEOS */  
+        .grid-conteiner3{  
+            width: 100%; 
+            margin: 0 auto;
+             display: grid; 
+             background-color: #E8F9FD; 
+             grid-template-rows: 180px 1100px 315px;
+             grid-template-columns: 1fr;  
+             grid-template-areas:  
+             "navbar" 
+             "principal" 
+              "footer"
+             ;
+            }  
+            .principal{ 
+                grid-area: principal;
+            }
+
+        .h1__principal {
+            font-size: 2rem;
+            text-align: justify;
+            margin: 1.5rem auto;
+            width: 80%; 
+             
+        } 
+
+        p {
+            text-align: justify;
+            font-size: 1.2rem;
+            color: #000;
+            margin: 1.5rem auto;
+            width: 80%; 
+            
+            
+
+        } 
+
+        .h2-torneos {
+            font-size: 1.6rem;
+            text-align: justify;
+            color: #000;
+            margin: 1.5rem auto;
+            width: 80%; 
+            
+        } 
+
+        .sectionCards .card {
+            align-items: center;
+            background-color: #6998AB;
+            margin: 40px auto 40px auto;
+            transition: transform 0.5s;
+            box-shadow: 0 5px 10px #b5b5b5; 
+            
+                        
+ 
+        }  
+
+        .h3-torneo { 
+            text-align: center; 
+            
+
+        } 
+        
+       
+
+        
+       
+
+        /* ESCUELA */  
+        .grid-conteiner4{  
+            width: 100%; 
+            margin: 0 auto;
+             display: grid; 
+             background-color: #E8F9FD; 
+             grid-template-rows: 180px 1200px 315px;
+             grid-template-columns: 1fr;  
+             grid-template-areas:  
+             "navbar" 
+             "principal" 
+              "footer"
+             ;
+            }  
+
+        .section-escuela{ 
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        } 
+
+        .titulos-escuela{ 
+            font-size: 2rem;
+            text-align: justify;
+            margin: 1.5rem auto;
+            width: 80%;
+        } 
+
+        .p-escuela{ 
+            text-align: justify;
+            font-size: 1.2rem;
+            margin: 1.5rem auto;
+            width: 80%;
+        } 
+        @media (max-width: 576px) {
+    
+            .footer1{
+               flex-direction:column;
+               align-items:center; } 
+               
+            
+            .grid-conteiner{ 
+               
+               grid-template-rows: 180px 300px 150px 400px 200px;
+            }
+            .grid-conteiner-1{ 
+               grid-template-rows: 420px 500px 1150px 200px;
+       
+            }  
+            .grid-conteiner3{ 
+               grid-template-rows: 180px 1500px 315px;
+       
+           }  
+           .grid-conteiner4{ 
+               grid-template-rows: 180px 1700px 315px;
+       
+           } 
+           .grid-conteiner5{ 
+               grid-template-rows: 180px 1500px 315px;
+           }
+           
+            .div3{ 
+               margin-right: 0px; 
+               margin-left: 0px;
+            } 
+            .sections2{ 
+               margin-right: 0px; 
+               margin-left: 0px;
+            }
+           
+       
+           }
+       
+           
+           
+          
+           
+       
+          @media (min-width: 576px) and (max-width: 992px) {
+              
+               .footer1{
+               flex-direction:column;
+               align-items:center; }
+                .grid-conteiner{ 
+               
+                   grid-template-rows: 420px 500px 150px 400px 200px;
+                   
+                 }
+                .grid-conteiner-1{  
+                   
+                   grid-template-rows: 420px 500px 750px 200px;
+       
+                
+                   }  
+                   .grid-conteiner3{ 
+                       grid-template-rows: 180px 1300px 315px;
+       
+                   }  
+                   .grid-conteiner4{ 
+                       grid-template-rows: 180px 1700px 315px;
+              
+                   } 
+                   .grid-conteiner5{ 
+                       grid-template-rows: 180px 1360px 315px;
+                   }
+                   .div3{ 
+                       margin-right: 20px; 
+                       margin-left: 20px;
+                    } 
+                    .sections2{ 
+                       margin-right: 20px; 
+                       margin-left: 20px;
+                    }
+               }   
+        
+        
+
+      
+        
        
        
        
